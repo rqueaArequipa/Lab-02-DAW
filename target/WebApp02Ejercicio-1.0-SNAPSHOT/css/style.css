@@ -1,0 +1,193 @@
+main {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("../img/log.jpg");
+    background-size: cover;
+
+
+}
+
+#inform {
+    display: flex;
+    align-items: center;
+    padding: 20px 0px 30px 0px;
+}
+
+#sobre {
+    display: flex;
+    flex-direction: column;
+    padding: 20px 90px 20px 90px;
+    gap: 16px;
+}
+
+#sobre h1 {
+    font-weight: 900;
+    color: #EFBC75;
+    font-size: 60px;
+    line-height: 67px;
+}
+
+#sobre h2 {
+    font-weight: 700;
+    color: #C1E1A7;
+    font-size: 34px;
+    line-height: 42px;
+}
+
+#sobre h3 {
+    font-weight: 400;
+    color: #cdd8c4;
+    font-size: 19px;
+    line-height: 21px;
+    width: auto;
+}
+
+#sobre h4 {
+    font-weight: 500;
+    color: #dcdddc;
+    font-size: 12px;
+    line-height: 11px;
+    width: auto;
+}
+
+#codigo {
+    margin: 40px 60px 60px 80px;
+    opacity: 0.8;
+}
+
+#codigo pre {
+    filter: blur(1px);
+    opacity: 0.8;
+}
+
+#codigo pre::after {
+    content: "|";
+    opacity: 1;
+    margin-left: 5px;
+    display: inline-block;
+    animation: blink .7s infinite;
+}
+
+@keyframes blink {
+
+    0%,
+    100% {
+        opacity: 1;
+    }
+
+    50% {
+        opacity: 0;
+    }
+}
+
+
+#historia {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("../img/icono.jpg");
+    background-size: cover;
+    border-top: 2px solid #1A4A5A;
+    border-bottom: 2px solid #1A4A5A;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 50px 80px;
+    gap: 20px;
+}
+
+#historia h1 {
+    text-align: center;
+    font-weight: 400;
+    font-size: 24px;
+    line-height: 25px;
+    color: #fff;
+}
+
+@media screen and (max-width: 910px) {
+
+    #inform {
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    #codigo {
+        margin-left: 40px;
+        font-size: 15px;
+    }
+
+}
+
+@media screen and (max-width: 770px) {
+
+
+    #sobre {
+        padding: 60px;
+    }
+
+    #sobre h1 {
+        font-size: 40px;
+    }
+
+    #sobre h2 {
+        font-size: 26px;
+    }
+
+    #sobre h3 {
+        font-size: 17px;
+        margin-right: 20px;
+    }
+
+    #codigo {
+        margin: 0;
+        margin-left: 0px;
+    }
+
+    #codigo pre {
+        filter: blur(0);
+        opacity: 0.5;
+    }
+
+    #codigo span {
+        font-size: 8px;
+        padding-left: 0px;
+    }
+
+    #historia img {
+        margin-right: 110px;
+    }
+
+    #historia h1 {
+        font-size: 20px;
+        margin-right: 50px;
+    }
+
+    #historia {
+        display: flex;
+        flex-direction: column;
+        padding: 50px 0px 50px 60px;
+    }
+
+}
+
+@media screen and (max-width: 450px) {
+    #sobre {
+        padding: 20px 0px 20px 30px;
+        gap: 8px;
+    }
+
+    #sobre h1 {
+        font-size: 35px;
+    }
+
+    #sobre h2 {
+        font-size: 24px;
+    }
+}/*
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+*/
+/* 
+    Created on : Apr 1, 2023, 2:24:43 PM
+    Author     : 51946
+*/
+

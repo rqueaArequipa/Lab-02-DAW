@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html>
+
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <title>Index</title>
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha2/dist/css/bootstrap.min.css" rel="stylesheet"
+              integrity="sha384-aFq/bzH65dt+w6FI2ooMVUpc+21e0SRygnTpmBvdBgSdnuTN7QbdgL+OapgHtvPp" crossorigin="anonymous">
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha2/dist/js/bootstrap.bundle.min.js"
+                integrity="sha384-qKXV1j0HvMUeCBQ+QVp7JcfGl760yU08IQ+GpUo5hlbpg51QRiuqHAJz8+BrxE/N"
+        crossorigin="anonymous"></script>
+
+
+    </head>
+
+    <body class="bg-black bg-gradient">
+
+        <header>
+            <div class="px-3 py-2 text-bg-dark">
+                <div class="container">
+                    <div class="d-flex flex-wrap align-items-center justify-content-center justify-content-lg-start">
+                        <a href="/"
+                           class="d-flex align-items-center my-2 my-lg-0 me-lg-auto text-white text-decoration-none">
+                            <svg class="bi me-2" width="40" height="32" role="img" aria-label="Bootstrap">
+                            <img src="https://rqueaarequipa.github.io/img/logo.png" alt="" width="20%">
+                            </svg>
+                        </a>
+
+                        <ul class="nav col-12 col-lg-auto my-2 justify-content-center my-md-0 text-small">
+                            <li>
+                                <a href="index.html" class="nav-link text-white">
+                                    Home
+                                </a>
+                            </li>
+                            <li class="nav-item dropdown">
+                                <a class="nav-link dropdown-toggle text-secondary" href="#" role="button" data-bs-toggle="dropdown"
+                                   aria-expanded="false">
+                                    Formularios
+                                </a>
+                                <ul class="dropdown-menu">
+                                    <li><a class="dropdown-item" href="envioOBasicas.html">Operaciones Basicas</a></li>
+                                    <li><a class="dropdown-item" href="envioODiversas.html">Operaciones Diversas</a></li> 
+                                </ul>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </header>
+        <div class="bg-dark bg-gradient">
+            <div class="container">
+                <section class="p-3">
+                    <div class="row mb-3">
+                        <h2 class="modal-title" style="padding: 20px; color: rgb(204, 204, 204);">Operaciones Basicas</h2>
+                    </div>
+                    <form class="row g-3" action="OperacionesBasicas.jsp" method="post" name="form">
+                        <div class="row mb-3">
+                            <label class="col-sm-2 col-form-label"  style="color: rgb(204, 204, 204);">Primer Valor:</label>
+                            <div class="col-sm-5">
+                                <input type="number" class="form-control" id="inputName3" name="num1" style="border: 1px solid rgb(145, 140, 140);" required>
+                            </div>
+                        </div>
+
+                        <!--Segundo valor-->
+                        <div class="row mb-3">
+                            <label class="col-sm-2 col-form-label" style="color: rgb(204, 204, 204);">Segundo Valor:</label>
+                            <div class="col-sm-5">
+                                <input type="number" class="form-control" id="inputPassword3" name="num2" style="border: 1px solid rgb(145, 140, 140);" required>
+                            </div>
+                        </div>
+
+                        <!--ejercicio a resolver-->
+                        <div class="row mb-3">
+                            <label class="col-sm-2 col-form-label" style="color: rgb(204, 204, 204);">Selecciona la operacion a realizar:</label>
+                            <div class="col-sm-5">
+                                <select class="form-select" aria-label="Default select example" name="operador" style="border: 1px solid rgb(145, 140, 140);" aria-required="true">
+                                    <option selected>Seleccion Obligatorio</option>
+                                    <option value="suma">Suma</option>
+                                    <option value="resta">Resta</option>
+                                    <option value="multiplicacion">Multiplicar</option>
+                                    <option value="division">División</option>
+                                </select>
+                            </div>
+                        </div>
+                        <button type="submit" class="btn btn-primary col-sm-2">Calcular</button>
+                    </form>
+                </section>
+
+                <div class="row mb-3">
+                    <img src="https://images-na.ssl-images-amazon.com/images/I/61W9wLnCOgL._AC_SL1000_.jpg" class="card-img-top" alt="..." style="height: 30rem;">
+                </div>
+                <br>
+                <br>
+            </div>
+        </div>
+        <div class="container">
+            <footer class="py-3 my-4">
+                <ul class="nav justify-content-center border-bottom pb-3 mb-3">
+                    <li class="nav-item"><a href="index.html" class="nav-link px-2 text-white">Home</a></li>
+                    <li class="nav-item"><a href="envioOBasicas.html" class="nav-link px-2 text-white">Formulario</a></li>
+                    
+                </ul>
+                <p class="text-center text-muted">&copy; 2023 QJ - Developer</p>
+            </footer>
+        </div>
+
+    </body>
+
+</html>
